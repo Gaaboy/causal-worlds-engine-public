@@ -1,0 +1,77 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Scope of results and maturation priorities — English edition</title><style>
+*{box-sizing:border-box}body{margin:0;background:#edf2f3;color:#20313a;font:16px/1.65 Georgia,serif}
+main{max-width:1050px;margin:36px auto;padding:44px 52px;background:#fff;box-shadow:0 12px 36px #102b3a16}
+h1,h2,h3{font-family:Arial,sans-serif;line-height:1.2;color:#12384c}h1{font-size:2.2rem}h2{margin-top:2em;border-bottom:1px solid #d9e2e6;padding-bottom:.35em}
+a{color:#12627b}table{border-collapse:collapse;width:100%;font-size:.94em}th,td{border:1px solid #d4dfe3;padding:10px;vertical-align:top}th{background:#edf4f6}
+img{max-width:100%;height:auto;display:block;margin:26px auto;border:1px solid #d9e2e6;border-radius:8px}
+@media(max-width:760px){main{margin:0;padding:24px 16px}table{font-size:.82em}th,td{padding:6px}}
+@media print{@page{margin:15mm}body{background:white;font-size:10.5pt}main{margin:0;padding:0;box-shadow:none}tr,img{break-inside:avoid}}
+</style><main><h1>Scope of results and maturation priorities</h1>
+<p>This note supplements the public dossier. It explains how to read the results without reducing the project to its limitations or presenting internal tests as universal validation. The engine, implementation recipes, configurations, and raw logs remain private.</p>
+<h2>What the central contribution is</h2>
+<p>The project brings together four reinforcing parts:</p>
+<ol>
+<li><strong>A descriptive framework</strong> — states, relations, and dynamics make it possible to ask comparable questions across different domains without assigning them the same laws or units.</li>
+<li><strong>A shared-world runtime</strong> — specialized mechanisms can read or transform shared state in an ordered execution.</li>
+<li><strong>An experimental loop</strong> — event provenance, checkpoints, resumption, branch comparisons, and ablations make selected connections examinable in defined scenarios.</li>
+<li><strong>A broad portfolio</strong> — physics, matter, water, chemistry, bodies, perception, memory, action, collective relations, and tools for creating and observing worlds are covered at different maturity levels.</li>
+</ol>
+<p>The intended distinction lies in their combination: compose heterogeneous domains in one world, follow the transfers the system records, then intervene on a branch to see whether a later consequence changes. This program is broader than one test or a long-duration run. This note clarifies the current scope of its main elements.</p>
+<h2>How to interpret the five open questions</h2>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>What is available</th>
+<th>What the results support</th>
+<th>Next priority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Time and synchronization</strong></td>
+<td>An ordered loop and a static inventory of 44 phases and 71 components: 49 classified by reference step, 17 by elapsed time, and 5 mixed.</td>
+<td>Calls and their timing regimes are catalogued. This does not mean that the cadences and units of every domain are already harmonized.</td>
+<td>Complete temporal contracts at domain boundaries and compare trajectories under different time partitions, starting with mechanisms sensitive to <code>dt</code> and thresholds.</td>
+</tr>
+<tr>
+<td><strong>Causal attribution</strong></td>
+<td>Event provenance, checkpoints, deterministic replay in qualified cases, branch comparisons, and ablations across several campaigns.</td>
+<td>A recorded link helps trace declared provenance. A controlled comparison can show a mechanism’s local contribution under tested conditions; the journal alone does not establish complete causation.</td>
+<td>Extend paired interventions to cross-domain connections and retain observables, controls, and limits with each result.</td>
+</tr>
+<tr>
+<td><strong>Endurance</strong></td>
+<td>A 47.99-hour resource record with 2,873 measurements and 416 net ticks, alongside a separate set of six aggregate world snapshots.</td>
+<td>The process remained present at the samples, but no new tick was recorded during the final nine minutes. The window ends about 50 seconds short of 48 hours; the snapshots do not describe the residents’ full trajectory.</td>
+<td>Measure process duration, tick advancement, and world state separately, with timestamps that align them. This is a hardware endurance indicator, not the main integrated result. <a href="https://github.com/Gaaboy/moteur-mondes-causaux/tree/main/evidence/run-record-01">Detailed record and graph</a>.</td>
+</tr>
+<tr>
+<td><strong>Reproducibility</strong></td>
+<td>Thousands of targeted checks and many campaigns; some resumption and replay checks are deterministic under explicit conditions. Overlapping batches remain distinct.</td>
+<td>There is a substantial base of internal checks. Counts are not an additive total, and they do not amount to independent replication or third-party validation.</td>
+<td>Keep protocols, comparators, versions, and criteria attached to each campaign; extend independent repetitions where a result depends on them.</td>
+</tr>
+<tr>
+<td><strong>Generalization</strong></td>
+<td>Coupled mechanisms and observed results across a range of domains and scenarios, including retained failures and mixed outcomes.</td>
+<td>Results describe the conditions actually tested; they do not promise that an arbitrary model can be integrated or that an effect transfers to every world.</td>
+<td>Broaden scenarios and transfer conditions progressively, without confusing architectural extensibility with automatic universal compatibility.</td>
+</tr>
+</tbody>
+</table>
+<p>The endurance measurement can be inspected in context with its filtered series and detailed record in the separate French repository: <a href="https://github.com/Gaaboy/moteur-mondes-causaux/tree/main/evidence/run-record-01">public report and graph</a>, <a href="https://github.com/Gaaboy/moteur-mondes-causaux/blob/main/evidence/run-record-01/resource-monitor-public.csv">monitor data</a>, <a href="https://github.com/Gaaboy/moteur-mondes-causaux/blob/main/evidence/run-record-01/observed-world-output-public.csv">world snapshots</a>.</p>
+<p><img alt="Filtered memory and tick-advancement series from the 47.99-hour record." src="https://raw.githubusercontent.com/Gaaboy/moteur-mondes-causaux/main/evidence/run-record-01/run-metrics.svg"></p>
+<h2>Work order</h2>
+<p>The priorities are not equivalent. The first two most directly strengthen the central technical proposition:</p>
+<ol>
+<li><strong>Temporal contracts for connections</strong> — specify and qualify what a mechanism reads and writes, at which cadence, in what units, and with what subdivision effects.</li>
+<li><strong>Causal evidence through intervention</strong> — connect provenance, control, intervention, and measured consequence in representative integrated scenarios.</li>
+<li><strong>Progress during long runs</strong> — distinguish an active process, an advancing world, and entity trajectories; align logs before describing world endurance.</li>
+<li><strong>Repetitions and reproducibility</strong> — strengthen paired comparisons and resumptions under conditions relevant to each result.</li>
+<li><strong>Transfer and generalization</strong> — broaden domains and worlds as temporal and causal contracts become better established.</li>
+</ol>
+<p>The 47.99-hour measurement is worth retaining because it informs process stability and memory use. It should neither be hidden nor take the place of composition results, domain campaigns, and intervention comparisons. Likewise, the lack of external validation bounds current claims; it does not erase internal tests, resumption tools, or observed capabilities.</p>
+<h2>Recommended public wording</h2>
+<p>The dossier describes an experimental multi-domain runtime and an observation-and-intervention loop exercised in defined scenarios. Its internal results cover integrated campaigns, domain calibrations, targeted checks, and long trajectories, with favorable, mixed, and negative outcomes. Temporal contracts are not yet harmonized everywhere; causal attribution must be supported by interventions specific to each question; the 47.99-hour endurance record does not establish 48 hours of continuous progress; and the results do not amount to independent validation or generalization to every model.</p>
+<p>This wording shows the breadth of the work while keeping each claim within its observations. No proprietary implementation detail is needed to make that distinction.</p></main></html>
