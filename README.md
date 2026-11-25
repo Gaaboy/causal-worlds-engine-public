@@ -1,4 +1,4 @@
-# Causal Worlds Engine — public technical dossier
+# A Runtime for Causal Worlds: Composing Complex Systems in One Shared Loop
 
 **English dossier v1.1 · scope note v1.1.3 · 24 November 2026**
 
