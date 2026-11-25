@@ -19,7 +19,7 @@ A solo project developed since August 2024, from theoretical grammar to an exper
 
 ## Archive and rights
 
-The English edition is archived on [Zenodo](https://zenodo.org/records/24513602). Citation and deposit metadata are included in this repository.
+The English edition is archived on [Zenodo v1.1.4-en](https://doi.org/10.5281/zenodo.24538080) · concept DOI (all versions): https://doi.org/10.5281/zenodo.24513601.
 
 © 2026 Gaaboy. All rights reserved. Public documentation only. No open-source license is granted for the engine, source code, or implementation recipes.
 
